@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  automatingrealworldcapstone:
+    image: automatingrealworldcapstone
+    build:
+      context: .
+      dockerfile: ./Dockerfile
