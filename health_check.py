@@ -26,7 +26,7 @@ def check_cpu_usage():
     usage = psutil.cpu_percent(1)
     return usage < 80
 def send_email(subject):
-    email = emails.generate_email("automation@example.com", "STUDENT_ID@example.com",
+    email = emails.generate_email("automation@example.com", "student@example.com",
                                   subject,
                                   "Please check your system and resolve the issue as soon as possible.", "")
     emails.send_email(email)
